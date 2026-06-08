@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume & Portfolio | Aphiwat Obaun</title>
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating Background Blobs -->
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">My<span>Resume.</span></a>
+
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">หน้าแรก</a></li>
+                <li><a href="#about" class="nav-link">เกี่ยวกับฉัน</a></li>
+                <li><a href="#skills" class="nav-link">ทักษะ</a></li>
+                <li><a href="#experience" class="nav-link">ประสบการณ์</a></li>
+                <li><a href="#portfolio" class="nav-link">ผลงาน</a></li>
+                <li><a href="#contact" class="btn-contact-nav">ติดต่อฉัน</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="hero-tag">ยินดีต้อนรับสู่พอร์ตโฟลิโอของฉัน</span>
+                <h1 class="hero-title"><span class="name-grad">อภิวัฒน์ อบอุ่น</span></h1>
+                <div class="hero-subtitle">
+                    <span>ทำงานด้าน</span>
+                    <span class="typing-text" id="typing-element"></span>
+                </div>
+                <p class="hero-desc">
+                    นักพัฒนาเว็บผู้เชี่ยวชาญการออกแบบและสร้างสรรค์ระบบเว็บแอปพลิเคชันที่รวดเร็ว ปลอดภัย
+                    และตอบโจทย์ผู้ใช้งาน มุ่งเน้นการสร้างสรรค์นวัตกรรมดิจิทัลด้วยเทคโนโลยีสมัยใหม่
+                </p>
+                <div class="hero-btns">
+                    <a href="#portfolio" class="btn-primary">
+                        ดูผลงานของผม <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        พูดคุยกัน <i class="fa-solid fa-comments"></i>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">5+</span>
+                        <span class="stat-label">ปีประสบการณ์</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">40+</span>
+                        <span class="stat-label">โปรเจกต์ที่สำเร็จ</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">99%</span>
+                        <span class="stat-label">ความพึงพอใจลูกค้า</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-img-bg"></div>
+                <div class="hero-image-wrapper">
+                    <!-- Profile avatar will be generated/loaded here -->
+                    <img src="avatar.png" alt="Profile Somchai" class="hero-img" id="hero-avatar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">เกี่ยวกับตัวผม</h2>
+            <div class="about-grid">
+                <div class="about-img-box">
+                    <div class="glass-card about-card">
+                        <h3>ข้อมูลส่วนตัว</h3>
+                        <ul class="about-info-list">
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                                <span class="info-lbl">ชื่อเต็ม:</span>
+                                <span class="info-val">อภิวัฒน์ อบอุ่น (Aphiwat Oboun)</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <span class="info-lbl">อีเมล:</span>
+                                <span class="info-val">aphiwatobaun@gmail.com</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <span class="info-lbl">เบอร์โทร:</span>
+                                <span class="info-val">061-475-9683</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span class="info-lbl">ที่อยู่:</span>
+                                <span class="info-val">ศรีสะเกษ, ประเทศไทย</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3>มุ่งมั่นพัฒนาเว็บแอปพลิเคชัน <span>เพื่อยกระดับธุรกิจของคุณ</span></h3>
+                    <p class="about-text">
+                        ผมเป็น Full Stack Developer ที่หลงใหลในการแก้ปัญหาด้วยการเขียนโค้ดและดีไซน์ที่ยอดเยี่ยม
+                        มีความเชี่ยวชาญตั้งแต่การวางแผนระบบฐานข้อมูล การพัฒนา API หลังบ้าน
+                        จนถึงการทำอินเตอร์เฟซหน้าบ้านที่สวยงามและใช้งานง่าย ผมชอบที่จะเรียนรู้เทคโนโลยีใหม่ๆ
+                        อยู่เสมอเพื่อนำมาเพิ่มประสิทธิภาพในการทำงานให้ทันสมัยที่สุด
+                    </p>
+                    <div class="about-highlights">
+                        <div class="glass-card highlight-box">
+                            <div class="highlight-icon">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <div class="highlight-details">
+                                <h4>Frontend Development</h4>
+                                <p>สร้างหน้าจอ UI ที่สวยงาม ลื่นไหล และทำงานได้ทุกอุปกรณ์แบบ Responsive</p>
+                            </div>
+                        </div>
+                        <div class="glass-card highlight-box">
+                            <div class="highlight-icon">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+                            <div class="highlight-details">
+                                <h4>Backend & APIs</h4>
+                                <p>ออกแบบโครงสร้างระบบเซิร์ฟเวอร์ Database และพัฒนา API ที่มีประสิทธิภาพและปลอดภัย</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="glass-section">
+        <div class="container">
+            <h2 class="section-title">ทักษะและความสามารถ</h2>
+
+            <div class="skills-container">
+                <div class="skills-category-tabs">
+                    <button class="skills-tab-btn active" data-category="all">ทั้งหมด</button>
+                    <button class="skills-tab-btn" data-category="frontend">Frontend</button>
+                    <button class="skills-tab-btn" data-category="backend">Backend</button>
+                    <button class="skills-tab-btn" data-category="tools">Tools & Others</button>
+                </div>
+
+                <div class="skills-grid" id="skills-grid">
+                    <!-- Frontend Skills -->
+                    <div class="glass-card skill-card" data-skill-type="frontend">
+                        <div class="skill-icon-wrapper">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <h3 class="skill-name">HTML5 / CSS3</h3>
+                        <div class="skill-level-container">
+                            <div class="skill-level-info">
+                                <span>ความชำนาญ</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" data-progress="90%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-card" data-skill-type="frontend">
+                        <div class="skill-icon-wrapper">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <h3 class="skill-name">JavaScript (ES6+)</h3>
+                        <div class="skill-level-container">
+                            <div class="skill-level-info">
+                                <span>ความชำนาญ</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" data-progress="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-card" data-skill-type="frontend">
+                        <div class="skill-icon-wrapper">
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+                        <h3 class="skill-name">React.js</h3>
+                        <div class="skill-level-container">
+                            <div class="skill-level-info">
+                                <span>ความชำนาญ</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" data-progress="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Skills -->
+                    <div class="glass-card skill-card" data-skill-type="backend">
+                        <div class="skill-icon-wrapper">
+                            <i class="fa-brands fa-node-js"></i>
+                        </div>
+                        <h3 class="skill-name">Node.js (Express)</h3>
+                        <div class="skill-level-container">
+                            <div class="skill-level-info">
+                                <span>ความชำนาญ</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" data-progress="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-card" data-skill-type="backend">
+                        <div class="skill-icon-wrapper">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+                        <h3 class="skill-name">Python (Django / FastAPI)</h3>
+                        <div class="skill-level-container">
+                            <div class="skill-level-info">
+                                <span>ความชำนาญ</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" data-progress="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-card" data-skill-type="backend">
+                        <div class="skill-icon-wrapper">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h3 class="skill-name">SQL / PostgreSQL / MongoDB</h3>
+                        <div class="skill-level-container">
+                            <div class="skill-level-info">
+                                <span>ความชำนาญ</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" data-progress="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools Skills -->
+                    <div class="glass-card skill-card" data-skill-type="tools">
+                        <div class="skill-icon-wrapper">
+                            <i class="fa-brands fa-git-alt"></i>
+                        </div>
+                        <h3 class="skill-name">Git & GitHub</h3>
+                        <div class="skill-level-container">
+                            <div class="skill-level-info">
+                                <span>ความชำนาญ</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" data-progress="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-card" data-skill-type="tools">
+                        <div class="skill-icon-wrapper">
+                            <i class="fa-brands fa-docker"></i>
+                        </div>
+                        <h3 class="skill-name">Docker</h3>
+                        <div class="skill-level-container">
+                            <div class="skill-level-info">
+                                <span>ความชำนาญ</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" data-progress="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">ประสบการณ์การทำงาน</h2>
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-card">
+                        <span class="timeline-date">2023 - ปัจจุบัน</span>
+                        <h3 class="timeline-role">Senior Full-Stack Developer</h3>
+                        <h4 class="timeline-company">Tech Innovate Co., Ltd.</h4>
+                        <div class="timeline-desc">
+                            <ul>
+                                <li>เป็นผู้นำทีมในการพัฒนาและวางสถาปัตยกรรมระบบเว็บแอปพลิเคชันหลักขององค์กร</li>
+                                <li>นำเทคโนโลยี React และ Node.js มาปรับปรุงหน้าเว็บเพื่อเพิ่มประสิทธิภาพการประมวลผลขึ้น
+                                    40%</li>
+                                <li>ออกแบบและปรับแต่งฐานข้อมูล PostgreSQL เพื่อรองรับการสืบค้นข้อมูลจำนวนมาก</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-card">
+                        <span class="timeline-date">2021 - 2023</span>
+                        <h3 class="timeline-role">Web Developer</h3>
+                        <h4 class="timeline-company">Digital Solutions Agency</h4>
+                        <div class="timeline-desc">
+                            <ul>
+                                <li>พัฒนาหน้าบ้าน (Frontend) ของเว็บไซต์ลูกค้าองค์กรต่าง ๆ ด้วย HTML, CSS, React</li>
+                                <li>ร่วมมือกับทีม UX/UI Designer เพื่อแปลงดีไซน์เป็นโค้ดที่ถูกต้องแม่นยำ</li>
+                                <li>สร้างและดูแลโปรเจกต์ E-Commerce ที่มียอดผู้เข้าชมรายเดือนมากกว่า 50,000 คน</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-card">
+                        <span class="timeline-date">2019 - 2021</span>
+                        <h3 class="timeline-role">Junior Developer</h3>
+                        <h4 class="timeline-company">StartUp Hub Thailand</h4>
+                        <div class="timeline-desc">
+                            <ul>
+                                <li>พัฒนาและทดสอบ Web API ด้วย Python (Django) สำหรับระบบภายใน</li>
+                                <li>ดูแลรักษา แก้ไขบั๊กของเว็บไซต์ระบบบริหารจัดการงานลูกค้า (CRM)</li>
+                                <li>ศึกษาและบูรณาการ API ร่วมกับบริการภายนอก เช่น ระบบชำระเงิน</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio / Projects Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-title">ผลงานล่าสุดของผม</h2>
+
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">ทั้งหมด</button>
+                <button class="filter-btn" data-filter="web">Web App</button>
+                <button class="filter-btn" data-filter="e-commerce">E-Commerce</button>
+                <button class="filter-btn" data-filter="api">API / Integration</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="glass-card project-card" data-project-type="e-commerce">
+                    <div class="project-img-box">
+                        <img src="project1.jpg" alt="E-Commerce App" class="project-img" id="project1-img">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link-icon" aria-label="View Project"><i
+                                    class="fa-solid fa-link"></i></a>
+                            <a href="#" class="project-link-icon" aria-label="GitHub"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">Stripe API</span>
+                        </div>
+                        <h3 class="project-title">Smart Shop E-Commerce</h3>
+                        <p class="project-desc">ระบบร้านค้าออนไลน์เต็มรูปแบบที่สามารถทำธุรกรรมผ่านบัตรเครดิต
+                            มีระบบจัดการสต็อก ตะกร้าสินค้า และหน้าแดชบอร์ดแอดมิน</p>
+                        <div class="project-card-footer">
+                            <a href="#" class="project-arrow-link">ดูรายละเอียดเพิ่มเติม <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-card project-card" data-project-type="web">
+                    <div class="project-img-box">
+                        <img src="project2.jpg" alt="Task Manager App" class="project-img" id="project2-img">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link-icon" aria-label="View Project"><i
+                                    class="fa-solid fa-link"></i></a>
+                            <a href="#" class="project-link-icon" aria-label="GitHub"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-tags">
+                            <span class="project-tag">Vue.js</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">Tailwind</span>
+                        </div>
+                        <h3 class="project-title">ZenTask Manager</h3>
+                        <p class="project-desc">แอปพลิเคชันบริหารจัดการงาน (Kanban Board) ที่สามารถทำเรียลไทม์ซิงค์
+                            ลากวางงาน และแชร์บอร์ดกับผู้ใช้งานร่วมทีมได้</p>
+                        <div class="project-card-footer">
+                            <a href="#" class="project-arrow-link">ดูรายละเอียดเพิ่มเติม <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="glass-card project-card" data-project-type="api">
+                    <div class="project-img-box">
+                        <img src="project3.jpg" alt="Weather API App" class="project-img" id="project3-img">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link-icon" aria-label="View Project"><i
+                                    class="fa-solid fa-link"></i></a>
+                            <a href="#" class="project-link-icon" aria-label="GitHub"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-tags">
+                            <span class="project-tag">FastAPI</span>
+                            <span class="project-tag">Redis</span>
+                            <span class="project-tag">Docker</span>
+                        </div>
+                        <h3 class="project-title">Crypto Rates Tracker</h3>
+                        <p class="project-desc">ระบบ API ประสิทธิภาพสูงสำหรับการดึงราคาเหรียญคริปโตแบบเรียลไทม์
+                            พร้อมการแคชข้อมูลด้วย Redis เพื่อลดเวลาตอบสนอง</p>
+                        <div class="project-card-footer">
+                            <a href="#" class="project-arrow-link">ดูรายละเอียดเพิ่มเติม <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">ติดต่อพูดคุยกับผม</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>มาร่วมงานกันเถอะ!</h3>
+                    <p class="about-text" style="text-indent: 0; margin-bottom: 2rem;">
+                        มีโปรเจกต์ที่ต้องการทำ หรือหาพนักงานไปพัฒนาต่อในองค์กร
+                        สามารถติดต่อหรือนัดพูดคุยกับผมได้ตามช่องทางต่างๆ ด้านล่างนี้ครับ
+                    </p>
+
+                    <div class="glass-card contact-method-card">
+                        <div class="contact-method-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-method-details">
+                            <h4>ส่งอีเมลหาผม</h4>
+                            <p>aphiwatobaun@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card contact-method-card">
+                        <div class="contact-method-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-method-details">
+                            <h4>โทรศัพท์ติดต่อ</h4>
+                            <p>061-475-9683</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="social-links-title">โซเชียลมีเดีย</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/aphiwat-oboun" class="social-btn" aria-label="GitHub"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="#" class="social-btn" aria-label="LinkedIn"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/aphiwat.oboun.2025" class="social-btn"
+                                aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="social-btn" aria-label="Line"><i class="fa-brands fa-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card contact-form-card">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <input type="text" id="name" class="form-control" placeholder="ชื่อของคุณ" required>
+                                <label for="name" class="form-label">ชื่อของคุณ</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" class="form-control" placeholder="อีเมลของคุณ" required>
+                                <label for="email" class="form-label">อีเมลของคุณ</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" class="form-control" placeholder="หัวเรื่อง" required>
+                            <label for="subject" class="form-label">หัวเรื่อง</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" class="form-control" placeholder="ข้อความของคุณ" required></textarea>
+                            <label for="message" class="form-label">ข้อความของคุณ</label>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+                            ส่งข้อความ <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <a href="#" class="footer-logo">My<span>Resume.</span></a>
+            <p class="footer-text">&copy; 2026 Aphiwat Obaun. All rights reserved. Designed with passion.</p>
+            <a href="#home" class="back-to-top" aria-label="Back to Top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
