@@ -462,12 +462,6 @@ ul {
     line-height: 1;
 }
 
-.infinity {
-    font-size: 4rem;
-    line-height: 1;
-    position: static;
-}
-
 .stat-label {
     font-size: .72rem;
     color: var(--ink-muted);
