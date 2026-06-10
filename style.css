@@ -439,7 +439,7 @@ ul {
 .badge-dot {
     width: 7px;
     height: 7px;
-    background: var(--accent);
+    background: #46c24c;
     border-radius: 50%;
     animation: pulse-dot 1.8s ease infinite;
 }
