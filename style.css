@@ -1404,7 +1404,7 @@ ul {
 
 @media (max-width: 600px) {
     .loader-card {
-        width: 50%;
+        width: 70%;
         padding: 20px;
         border-radius: 18px;
     }
@@ -1421,8 +1421,8 @@ ul {
 
     #loader::before,
     #loader::after {
-        width: 120px;
-        height: 120px;
+        width: 80px;
+        height: 80px;
     }
 
     .nav-container {
