@@ -37,14 +37,16 @@
         <nav class="nav-container">
             <div class="nav-logo">
                 <span class="logo-dot"></span>
-                <span>APHIWAT OBAUN</span>
+                <a href="#hero">APHIWAT OBAUN</a>
             </div>
+
             <ul class="nav-links">
                 <li><a href="#hero" class="nav-link active">หน้าแรก</a></li>
                 <li><a href="#about" class="nav-link">เกี่ยวกับ</a></li>
                 <li><a href="#skills" class="nav-link">ทักษะ</a></li>
                 <li><a href="#contact" class="nav-link">ติดต่อ</a></li>
             </ul>
+
             <button class="hamburger" id="hamburger" aria-label="menu">
                 <span></span><span></span><span></span>
             </button>
@@ -131,12 +133,12 @@
         </div>
 
         <!-- Scroll Indicator -->
-        <div class="scroll-hint">
+        <a href="#about" class="scroll-hint">
             <span>เลื่อนลง</span>
             <div class="scroll-arrow">
                 <i class="fas fa-chevron-down"></i>
             </div>
-        </div>
+        </a>
     </section>
 
     <!-- ===== ABOUT SECTION ===== -->
@@ -521,9 +523,8 @@
 
             setTimeout(() => {
                 loader.classList.add("hide");
-            }, 450);
+            }, 1000);
         });
-
 
         // ===== FLOAT CARDS =====
         const floatCards = document.querySelectorAll('.float-card');
