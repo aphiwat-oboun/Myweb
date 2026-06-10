@@ -800,7 +800,7 @@ ul {
     font-family: var(--ff-body);
     font-size: clamp(2rem, 4.5vw, 3rem);
     font-weight: 800;
-    line-height: 1.1;
+    line-height: 1.5;
     letter-spacing: -.02em;
     color: var(--ink);
     margin-bottom: .6rem;
