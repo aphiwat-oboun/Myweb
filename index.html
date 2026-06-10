@@ -22,6 +22,16 @@
 
 <body>
 
+    <div id="loader">
+        <div class="loader-card">
+            <h1>APHIWAT OBAUN</h1>
+
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- ===== NAVBAR ===== -->
     <header id="header">
         <nav class="nav-container">
@@ -54,8 +64,7 @@
                 </div>
 
                 <h1 class="hero-name">
-                    สวัสดีครับ<br>
-                    ผม <em class="name-highlight" id="typed-name">อภิวัฒน์</em>
+                    <em class="name-highlight">นายอภิวัฒน์ อบอุ่น</em>
                 </h1>
 
                 <p class="hero-tagline">
@@ -66,7 +75,7 @@
                 <p class="hero-bio">
                     กำลังศึกษาและพัฒนาตัวเองอย่างต่อเนื่อง
                     มีความสนใจด้านเทคโนโลยีสารสนเทศและการพัฒนาเว็บไซต์
-                    พร้อมที่จะเรียนรู้สิ่งใหม่ๆ อยู่เสมอ ✨
+                    พร้อมที่จะเรียนรู้สิ่งใหม่ๆ อยู่เสมอ
                 </p>
 
                 <div class="hero-actions">
@@ -287,15 +296,15 @@
                     <span class="skill-pct">40%</span>
                 </div>
 
-                <div class="skill-card" data-skill="75">
+                <div class="skill-card" data-skill="40">
                     <div class="skill-icon-wrap">
                         <i class="fab fa-git-alt"></i>
                     </div>
                     <h3 class="skill-name">Git</h3>
                     <div class="skill-bar-wrap">
-                        <div class="skill-bar" data-width="75"></div>
+                        <div class="skill-bar" data-width="40"></div>
                     </div>
-                    <span class="skill-pct">75%</span>
+                    <span class="skill-pct">40%</span>
                 </div>
             </div>
         </div>
@@ -317,7 +326,7 @@
                     <div class="tl-card">
                         <span class="tl-year">2568 – ปัจจุบัน</span>
                         <h3 class="tl-title">มหาวิทยาลัยราชภัฏศรีสะเกษ</h3>
-                        <p class="tl-sub">ชั้นปีที่ 2 · รหัสนักศึกษา 6812732127</p>
+                        <p class="tl-sub">ชั้นปีที่ 2 · รหัสนักศึกษา : 6812732127</p>
                         <p class="tl-desc">กำลังศึกษาในระดับปริญญาตรี มุ่งมั่นพัฒนาทักษะทางวิชาการและวิชาชีพ</p>
                         <div class="tl-badge current-badge">
                             <span class="pulse-dot"></span> กำลังศึกษา
@@ -404,7 +413,10 @@
                 <span>Portfolio</span>
             </div>
             <p class="footer-text">
-                นักศึกษา มหาวิทยาลัยราชภัฏศรีสะเกษ · ชั้นปีที่ 2 · รหัส 6812732127
+                นักศึกษา มหาวิทยาลัยราชภัฏศรีสะเกษ · ชั้นปีที่ 2
+            </p>
+            <p class="footer-text">
+                รหัส : 6812732127
             </p>
             <p class="footer-copy">© 2026 | All rights reserved. Created by Aphiwat Obaun</p>
         </div>
@@ -474,6 +486,7 @@
         cards.forEach(card => cardObserver.observe(card));
 
         // ===== TYPING EFFECT =====
+        /*S
         const nameEl = document.getElementById('typed-name');
         const names = ['อภิวัฒน์', 'Aphiwat', 'นักพัฒนา', 'นักศึกษา'];
         let ni = 0, ci = 0, isDeleting = false;
@@ -499,6 +512,18 @@
             setTimeout(typeLoop, isDeleting ? 60 : 110);
         }
         setTimeout(typeLoop, 800);
+
+    */
+
+
+        window.addEventListener("load", () => {
+            const loader = document.getElementById("loader");
+
+            setTimeout(() => {
+                loader.classList.add("hide");
+            }, 450);
+        });
+
 
         // ===== FLOAT CARDS =====
         const floatCards = document.querySelectorAll('.float-card');
