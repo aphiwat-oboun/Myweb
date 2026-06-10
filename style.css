@@ -1404,13 +1404,13 @@ ul {
 
 @media (max-width: 600px) {
     .loader-card {
-        width: 65%;
+        width: 50%;
         padding: 20px;
         border-radius: 18px;
     }
 
     .loader-card h1 {
-        font-size: 24px;
+        font-size: 18px;
         letter-spacing: .08em;
     }
 
